@@ -1,0 +1,29 @@
+<ion-grid class="container">
+
+  <h1>List</h1>
+  <ion-row class="result">
+    <ion-col size=12>
+      <div *ngIf="error">
+        <ion-button color="pink" (click)="retry()">Try again</ion-button>
+      </div>
+      <div *ngIf="!todoList && !error ; else new" class="loader">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ng-template #new>
+        <ion-button class="btnCreate" color="pink" routerLink="todo">New task</ion-button>
+      </ng-template>
+
+      <div *ngFor="let todo of todoList" class="todoItem">
+        
+        <h2 class="title" >{{todo.task}}</h2>
+        <ion-button [routerLink]="['detail', todo.task]" color="medium">Detail</ion-button>
+        <ion-button [disabled]="this.todoDisabled == this.todo" color="danger" (click)="delete(todo)"><ion-icon name="trash"></ion-icon></ion-button>
+      </div>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+

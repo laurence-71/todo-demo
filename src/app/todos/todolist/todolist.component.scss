@@ -1,0 +1,96 @@
+.container{
+    height: 75%;
+
+   margin-left: 40px;
+   margin-right: 40px;
+
+   overflow-y: scroll ;
+   
+    border: rgb(195, 154, 235) solid 5px;
+
+
+}
+
+.hide{
+    display: none;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.btnCreate{
+    color: black;
+    background-color: rgb(233, 190, 197);
+}
+
+.title{
+    color : white;
+
+    
+}
+
+h1{
+    font-size: 30px;
+}
+
+.result{
+   height:100%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+
+.todoItem:nth-child(odd){
+    border: rgb(195, 154, 235) solid 2px;
+}
+
+.todoItem:nth-child(even){
+    border:rgb(195, 154, 235) solid 2px;
+}
+
+.loader{
+    position:absolute;
+    top: 35%;
+    left: 40%;
+
+
+.line {
+    animation: expand 1s ease-in-out infinite;
+  border-radius: 10px;
+  display: inline-block;
+  transform-origin: center center;
+  margin: 10px 10px;
+  width: 10px;
+  height: 60px;
+}
+
+.line:nth-child(1){
+    background: salmon;
+}
+
+.line:nth-child(2){
+    animation-delay: 180ms;
+    background:sandybrown ;
+}
+
+.line:nth-child(3){
+    animation-delay: 360ms;
+    background: salmon;
+}
+
+.line:nth-child(4){
+    animation-delay: 540ms;
+    background:sandybrown ;
+}
+
+@keyframes expand {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(2);
+    }
+}
+}

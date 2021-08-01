@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Creation</h2>
+  <form [formGroup]="todoForm" (ngSubmit)="create()" class="form">
+    <ion-item class="item">
+      <ion-label>Task :</ion-label>
+      <ion-input formControlName="task">
+        <span *ngIf="!todoForm.get('task').valid && todoForm.get('task').dirty">
+          Not valid
+        </span>
+  
+      </ion-input>
+    </ion-item>
+    <ion-item class="item">
+      <ion-label>Description : </ion-label>
+      <ion-textarea formControlName="description"></ion-textarea>
+    </ion-item>
+    <ion-button class="btnCreate" color="pink" routerLink='todos'><ion-icon name="chevron-back-outline"></ion-icon></ion-button>
+    <ion-button [disabled]="!todoForm.valid || disabled" class="btnCreate" color="pink" type="submit">Create</ion-button>
+  </form>
+  </div>
+  
+
+
+
+

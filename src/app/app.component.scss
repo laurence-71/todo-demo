@@ -1,0 +1,18 @@
+:host{
+    height: 100%;
+    
+    background-color:rgb(9, 9, 54);
+    background-position-x: center;
+    background-size: cover;
+    border:rgb(103, 103, 248) 2px solid;
+    display:block;
+    text-align: center;
+    color: white;
+
+    h1{
+        font-size: 40px;
+        font-style: bold;
+        height: 15%;
+        padding-top: 2%;
+    }
+}
