@@ -1,7 +1,7 @@
-# To Do List Weather
+# To Do Demo
 
 # Ionic/Angular/Cordova project
-* This is a recipe for a mobile application to manage a short task list with the addition of the weather of the moment just to show the connection with an API .
+* This is a recipe for a mobile application to manage a short task list .
 * Programmation langage will be ionic and angular framework, the build and the deployment will be with cordova framework
 
 # Set up the project
